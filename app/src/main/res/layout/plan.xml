@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/ivBack"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_back_ios_24" />
 
         <TextView
@@ -26,7 +26,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:fontFamily="@font/roboto_bold"
             android:text="My Plan"
             android:textColor="@color/primaryTextColor"
             android:textSize="20sp" />
@@ -37,8 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:gravity="space_between">
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/tvDailyPlan"
@@ -46,8 +44,7 @@
             android:layout_height="wrap_content"
             android:text="Daily Plan"
             android:textColor="@color/primaryTextColor"
-            android:textSize="18sp"
-            android:fontFamily="@font/roboto_bold" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -95,6 +92,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Calories"
+                            android:textStyle="bold"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="14sp" />
 
@@ -104,14 +102,13 @@
                             android:text="720"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="24sp"
-                            android:fontFamily="@font/roboto_bold"
                             android:layout_marginTop="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kcal"
-                            android:textColor="@color/secondaryTextColor"
+                            android:textColor="@color/black"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -149,6 +146,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Steps"
+                            android:textStyle="bold"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="14sp" />
 
@@ -158,14 +156,13 @@
                             android:text="1000"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="24sp"
-                            android:fontFamily="@font/roboto_bold"
                             android:layout_marginTop="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Steps"
-                            android:textColor="@color/secondaryTextColor"
+                            android:textColor="@color/black"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -210,6 +207,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sleep"
+                            android:textStyle="bold"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="14sp" />
 
@@ -219,14 +217,13 @@
                             android:text="6 hr"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="24sp"
-                            android:fontFamily="@font/roboto_bold"
                             android:layout_marginTop="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hours"
-                            android:textColor="@color/secondaryTextColor"
+                            android:textColor="@color/black"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </RelativeLayout>
@@ -264,6 +261,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Water"
+                            android:textStyle="bold"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="14sp" />
 
@@ -273,18 +271,252 @@
                             android:text="2 liters"
                             android:textColor="@color/primaryTextColor"
                             android:textSize="24sp"
-                            android:fontFamily="@font/roboto_bold"
                             android:layout_marginTop="8dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Liters"
-                            android:textColor="@color/secondaryTextColor"
+                            android:textColor="@color/black"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Calories Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#C0E91E63"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+                        <!-- Icon on the Top-Right -->
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_run"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true" />
+
+                        <!-- Text Content -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Running"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="720"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="24sp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kcal"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Steps Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#B6CDDC39"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+                        <!-- Icon on the Top-Right -->
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_swim"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true" />
+
+                        <!-- Text Content -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Swimming"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="24sp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Steps"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Sleep Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#AA009688"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+                        <!-- Icon on the Top-Right -->
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_skipping_rope"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true" />
+
+                        <!-- Text Content -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Skipping Rope"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6 hr"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="24sp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hours"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Water Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#B800BCD4"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp">
+
+                        <!-- Icon on the Top-Right -->
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_cycling"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true" />
+
+                        <!-- Text Content -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cycling"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 liters"
+                                android:textColor="@color/primaryTextColor"
+                                android:textSize="24sp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Liters"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
     </LinearLayout>
+</LinearLayout>
 </LinearLayout>
